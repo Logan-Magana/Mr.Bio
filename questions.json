@@ -1,0 +1,27 @@
+[
+	{
+		"question": "What do T-Cells do in the immune system?",
+		"answers": ["Fight viruses", "Digest food", "Pump blood", "Store energy"],
+		"correct": 0
+	},
+	{
+		"question": "What triggers a fever response?",
+		"answers": ["Bacteria only", "Cold temperature", "Exercise", "Immune signals"],
+		"correct": 3
+	},
+	{
+		"question": "T-Cells and B-Cells are both types of?",
+		"answers": ["White blood cells", "Liver cells", "Red blood cells", "Stem cells"],
+		"correct": 0
+	},
+	{
+		"question": "What do Macrophages eat?",
+		"answers": ["Sugars", "Healthy cells", "Bacteria", "Other macrophages"],
+		"correct": 2
+	},
+	{
+		"question": "What is the difference between T-Cells and B-Cells?",
+		"answers": ["T-Cells fight viruses directly, while B-Cells produce antibodies", "T-Cells consume dead cells, while B-Cells builds new cells", "T-Cells store energy, while B-Cells fight infections", "T-Cells are only larger than B-Cells"],
+		"correct": 1
+	}
+]

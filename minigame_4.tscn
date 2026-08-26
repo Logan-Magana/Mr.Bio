@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://c48l6hpthebr5"]
+
+[ext_resource type="Script" uid="uid://tndonp0g72y0" path="res://infected.gd" id="1_80u0h"]
+[ext_resource type="Script" uid="uid://bd06we8ltwt2m" path="res://minigame_4.gd" id="1_c5c30"]
+[ext_resource type="PackedScene" uid="uid://dktmocl53ocii" path="res://healthy_cells.tscn" id="3_wae4i"]
+[ext_resource type="Texture2D" uid="uid://pelijkyg3jkr" path="res://assets/Cell-Factory.png" id="3_yanj6"]
+[ext_resource type="Texture2D" uid="uid://ej2koomp4n8p" path="res://assets/Interferon.png" id="5_8qm3o"]
+[ext_resource type="Texture2D" uid="uid://b0d20wc0f3oqq" path="res://assets/Arrow_Keys.png" id="6_yanj6"]
+[ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="7_8qm3o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c5c30"]
+radius = 16.124516
+
+[node name="Interferon" type="Node2D" unique_id=1574543419]
+script = ExtResource("1_c5c30")
+cells = ExtResource("3_wae4i")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1099988958]
+position = Vector2(230, 174)
+scale = Vector2(5, 5)
+texture = ExtResource("3_yanj6")
+
+[node name="Infected" type="Area2D" parent="." unique_id=2077202960]
+position = Vector2(230, 190)
+script = ExtResource("1_80u0h")
+
+[node name="Sprite2D" type="Sprite2D" parent="Infected" unique_id=980559632]
+texture = ExtResource("5_8qm3o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Infected" unique_id=2074750309]
+shape = SubResource("CircleShape2D_c5c30")
+
+[node name="CellTimer" type="Timer" parent="Infected" unique_id=909440608]
+wait_time = 2.0
+one_shot = true
+
+[node name="GameTimer" type="Timer" parent="Infected" unique_id=1588928090]
+wait_time = 10.0
+one_shot = true
+
+[node name="Controls" type="Label" parent="." unique_id=1800718310]
+offset_left = 36.0
+offset_top = 109.0
+offset_right = 436.0
+offset_bottom = 129.0
+theme_override_font_sizes/font_size = 20
+text = "Signal to the Others"
+
+[node name="Controls_Sprite" type="Sprite2D" parent="." unique_id=1718390622]
+position = Vector2(230, 61)
+scale = Vector2(2, 2)
+texture = ExtResource("6_yanj6")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1866045085]
+show_behind_parent = true
+position = Vector2(240, 135)
+texture = ExtResource("7_8qm3o")
+
+[connection signal="timeout" from="Infected/CellTimer" to="Infected" method="_on_cell_timer_timeout"]
+[connection signal="timeout" from="Infected/GameTimer" to="." method="_on_game_timer_timeout"]

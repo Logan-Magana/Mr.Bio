@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UnitStats" format=3 uid="uid://d4l4rsnjblifn"]
+
+[ext_resource type="Script" uid="uid://de41dm0y0xd0q" path="res://unit_script.gd" id="1_yy40r"]
+
+[resource]
+script = ExtResource("1_yy40r")
+unit_name = "Macrophage"
+max_hp = 110
+current_hp = 110
+attack_power = 12
+unit_type = "Phagocytosis"
+metadata/_custom_type_script = "uid://de41dm0y0xd0q"

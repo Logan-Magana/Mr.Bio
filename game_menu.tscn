@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://df21v57yb8cb"]
+
+[ext_resource type="Script" uid="uid://d1elft0twot6k" path="res://canvas_layer.gd" id="1_jowre"]
+[ext_resource type="AudioStream" uid="uid://d2nyjid330uf4" path="res://assets/Start.wav" id="2_pbvm6"]
+[ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="2_rjxss"]
+[ext_resource type="Texture2D" uid="uid://boka3h3sjypl8" path="res://assets/Influenza.png" id="3_3rcmp"]
+[ext_resource type="Texture2D" uid="uid://cofcn6ggu4s7b" path="res://assets/T-Cell.png" id="3_jprcw"]
+[ext_resource type="Texture2D" uid="uid://dkycer6fle5g7" path="res://assets/RhinoVirus.png" id="4_pbvm6"]
+[ext_resource type="Texture2D" uid="uid://bx0ulew14cidl" path="res://assets/Macrophage.png" id="5_yd342"]
+[ext_resource type="Texture2D" uid="uid://c60440qx22df7" path="res://assets/B-Cell.png" id="6_tklej"]
+[ext_resource type="Texture2D" uid="uid://dn3prlyqtaeef" path="res://assets/Bacteriophage.png" id="8_scae6"]
+
+[node name="Game_Menu" type="Node2D" unique_id=1317537386]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1885837228]
+script = ExtResource("1_jowre")
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=475328479]
+offset_left = 140.0
+offset_top = 30.0
+offset_right = 320.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.7019608, 0.9137255, 0.99607843, 1)
+theme_override_font_sizes/font_size = 30
+text = "Mr.Bio"
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=2041891799]
+offset_left = 160.0
+offset_top = 200.0
+offset_right = 293.0
+offset_bottom = 233.0
+theme_override_colors/font_color = Color(0.7017021, 0.91472256, 0.9970972, 1)
+theme_override_colors/font_focus_color = Color(0.97071224, 0.9597829, 0.7977092, 1)
+theme_override_colors/font_hover_color = Color(0.9446593, 0.9754917, 0.74395007, 1)
+theme_override_font_sizes/font_size = 25
+text = "Start"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=872122049]
+visibility_layer = 65536
+offset_right = 481.0
+offset_bottom = 268.0
+color = Color(0.080783345, 0.080783345, 0.080783345, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=659034437]
+stream = ExtResource("2_pbvm6")
+
+[node name="Bg" type="Sprite2D" parent="." unique_id=717967858]
+position = Vector2(240, 135)
+texture = ExtResource("2_rjxss")
+
+[node name="Enemy2" type="Sprite2D" parent="." unique_id=757049508]
+position = Vector2(410, 100)
+rotation = -0.08726646
+scale = Vector2(3, 3)
+texture = ExtResource("3_3rcmp")
+
+[node name="Enemy1" type="Sprite2D" parent="." unique_id=216551084]
+position = Vector2(378, 148.00003)
+rotation = -0.17453294
+scale = Vector2(3, 3)
+texture = ExtResource("4_pbvm6")
+
+[node name="Player3" type="Sprite2D" parent="." unique_id=1057152642]
+position = Vector2(50.000004, 196)
+scale = Vector2(3, 3)
+texture = ExtResource("5_yd342")
+
+[node name="Player2" type="Sprite2D" parent="." unique_id=726576815]
+position = Vector2(58.000015, 100)
+rotation = 0.08726646
+scale = Vector2(3, 3)
+texture = ExtResource("6_tklej")
+
+[node name="Player1" type="Sprite2D" parent="." unique_id=449571071]
+position = Vector2(98, 148)
+rotation = 0.17453294
+scale = Vector2(3, 3)
+texture = ExtResource("3_jprcw")
+
+[node name="Enemy3" type="Sprite2D" parent="." unique_id=2009269249]
+position = Vector2(418, 196)
+scale = Vector2(3, 3)
+texture = ExtResource("8_scae6")

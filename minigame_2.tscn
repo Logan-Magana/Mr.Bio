@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c5cjfb56i4ofd"]
+
+[ext_resource type="Script" uid="uid://d0ryjtqhfhgoh" path="res://minigame_2.gd" id="1_vdqgs"]
+[ext_resource type="PackedScene" uid="uid://dy40kyd031hee" path="res://target.tscn" id="2_2425y"]
+[ext_resource type="Texture2D" uid="uid://c5vabip6yvkfj" path="res://assets/Click.png" id="3_5x31c"]
+[ext_resource type="Texture2D" uid="uid://boka3h3sjypl8" path="res://assets/Influenza.png" id="4_3qiw4"]
+[ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="5_3qiw4"]
+
+[node name="Antibody" type="Node2D" unique_id=1202167590]
+script = ExtResource("1_vdqgs")
+targets = ExtResource("2_2425y")
+
+[node name="Timer" type="Timer" parent="." unique_id=626924605]
+wait_time = 10.0
+one_shot = true
+
+[node name="Label" type="Label" parent="." unique_id=1880435641]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Controls" type="Label" parent="." unique_id=1803640255]
+offset_left = 53.0
+offset_top = 55.0
+offset_right = 405.0
+offset_bottom = 71.0
+text = "Snipe the Real Viruses"
+
+[node name="Controls_Sprite" type="Sprite2D" parent="." unique_id=113752574]
+position = Vector2(197, 123)
+scale = Vector2(3, 3)
+texture = ExtResource("3_5x31c")
+
+[node name="Controls_Sprite2" type="Sprite2D" parent="." unique_id=418029555]
+position = Vector2(268, 126)
+scale = Vector2(2, 2)
+texture = ExtResource("4_3qiw4")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1871224713]
+show_behind_parent = true
+position = Vector2(240, 135)
+texture = ExtResource("5_3qiw4")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

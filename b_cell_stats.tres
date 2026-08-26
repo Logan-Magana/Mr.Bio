@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UnitStats" format=3 uid="uid://c7835t1fiu77s"]
+
+[ext_resource type="Script" uid="uid://de41dm0y0xd0q" path="res://unit_script.gd" id="1_rjrbp"]
+
+[resource]
+script = ExtResource("1_rjrbp")
+unit_name = "B-Cell"
+max_hp = 90
+current_hp = 90
+attack_power = 20
+unit_type = "Antibody"
+metadata/_custom_type_script = "uid://de41dm0y0xd0q"

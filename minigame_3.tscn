@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://dia0abibpowly"]
+
+[ext_resource type="Script" uid="uid://d148w5nlovw67" path="res://path_follow_2d.gd" id="1_33dbb"]
+[ext_resource type="Script" uid="uid://cilpd1i3a8qk6" path="res://minigame_3.gd" id="1_cdg48"]
+[ext_resource type="Script" uid="uid://cfio83rqe0bb" path="res://macrophage.gd" id="1_gqi5c"]
+[ext_resource type="Texture2D" uid="uid://bx0ulew14cidl" path="res://assets/Macrophage.png" id="2_5xr8p"]
+[ext_resource type="Texture2D" uid="uid://dn3prlyqtaeef" path="res://assets/Bacteriophage.png" id="2_cdg48"]
+[ext_resource type="Texture2D" uid="uid://b0d20wc0f3oqq" path="res://assets/Arrow_Keys.png" id="6_1i1uu"]
+[ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="7_0abbc"]
+
+[sub_resource type="Curve2D" id="Curve2D_gqi5c"]
+bake_interval = 10.0
+_data = {
+"points": PackedVector2Array(6.830134, 48.49395, -6.830134, -48.49395, -20, 128, -11.611227, -19.124374, 11.611227, 19.124374, 68, 56, -29.369576, -11.611227, 29.369576, 11.611227, 84, 128, -10.245201, -8.19616, 10.245201, 8.19616, 156, 96, -34.833683, 10.2452, 34.833683, -10.2452, 172, 168, -30.05259, 26.637522, 30.05259, -26.637522, 220, 40, -16.39232, -6.830134, 16.39232, 6.830134, 260, 88, -3.415067, -7.5131474, 3.415067, 7.5131474, 308, 56, 0, -34.15067, 0, 34.15067, 260, 136, 17.758348, -23.222454, -17.758348, 23.222454, 308, 192, 10.245201, -17.075335, -10.245201, 17.075335, 220, 192, 20.490402, 47.810936, -20.490402, -47.810936, 124, 216, 0, 0, 0, 0, 28, 200, -5.464107, 36.199707, 5.464107, -36.199707, -76, 152, 0, 0, 0, 0, -20, 128, 0, 0, 0, 0, -20, 128)
+}
+point_count = 16
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1i1uu"]
+radius = 13.2454605
+height = 45.59375
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0abbc"]
+radius = 24.083189
+
+[node name="Phagocytosis" type="Node2D" unique_id=1219870508]
+script = ExtResource("1_cdg48")
+
+[node name="Path2D" type="Path2D" parent="." unique_id=1290284670]
+position = Vector2(100, 0)
+curve = SubResource("Curve2D_gqi5c")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D" unique_id=1142210170]
+position = Vector2(-20, 128)
+rotation = -1.710721
+rotates = false
+script = ExtResource("1_33dbb")
+
+[node name="Bacteriophage" type="Area2D" parent="Path2D/PathFollow2D" unique_id=46145667]
+position = Vector2(1.9073486e-06, 0)
+rotation = 1.6842427
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Bacteriophage" unique_id=754293486]
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("2_cdg48")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Bacteriophage" unique_id=507691822]
+shape = SubResource("CapsuleShape2D_1i1uu")
+
+[node name="Macrophage" type="Area2D" parent="." unique_id=608962569]
+position = Vector2(200, 30)
+script = ExtResource("1_gqi5c")
+speed = 350
+
+[node name="Sprite2D" type="Sprite2D" parent="Macrophage" unique_id=1019455871]
+scale = Vector2(1.7, 1.7)
+texture = ExtResource("2_5xr8p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Macrophage" unique_id=471006387]
+shape = SubResource("CircleShape2D_0abbc")
+
+[node name="Timer" type="Timer" parent="Macrophage" unique_id=1829704717]
+wait_time = 8.0
+one_shot = true
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1239500404]
+show_behind_parent = true
+position = Vector2(240, 135)
+texture = ExtResource("7_0abbc")
+
+[node name="Controls" type="Label" parent="." unique_id=1166414470]
+offset_left = 56.0
+offset_top = 64.0
+offset_right = 440.0
+offset_bottom = 80.0
+text = "Catch that Bacteriophage"
+
+[node name="Controls_Sprite" type="Sprite2D" parent="." unique_id=564416757]
+position = Vector2(256, 134)
+scale = Vector2(2, 2)
+texture = ExtResource("6_1i1uu")
+
+[connection signal="area_entered" from="Path2D/PathFollow2D/Bacteriophage" to="Macrophage" method="_on_bacteriophage_area_entered"]
+[connection signal="area_exited" from="Path2D/PathFollow2D/Bacteriophage" to="Macrophage" method="_on_bacteriophage_area_exited"]
+[connection signal="timeout" from="Macrophage/Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UnitStats" format=3 uid="uid://ye7e2w7obir5"]
+
+[ext_resource type="Script" uid="uid://de41dm0y0xd0q" path="res://unit_script.gd" id="1_l4621"]
+
+[resource]
+script = ExtResource("1_l4621")
+unit_name = "Influenza"
+max_hp = 60
+current_hp = 60
+attack_power = 11
+unit_type = "Mutation"
+metadata/_custom_type_script = "uid://de41dm0y0xd0q"

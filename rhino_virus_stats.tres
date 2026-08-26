@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UnitStats" format=3 uid="uid://dphicjwlxjix5"]
+
+[ext_resource type="Script" uid="uid://de41dm0y0xd0q" path="res://unit_script.gd" id="1_7u7sr"]
+
+[resource]
+script = ExtResource("1_7u7sr")
+unit_name = "RhinoVirus"
+max_hp = 50
+current_hp = 50
+unit_type = "Replication"
+metadata/_custom_type_script = "uid://de41dm0y0xd0q"
