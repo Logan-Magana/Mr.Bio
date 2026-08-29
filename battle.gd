@@ -78,6 +78,8 @@ func change_state(new_state: BattleState):
 			$Fight_Timer.start()
 		BattleState.PLAYER_TURN:
 			print("Player's turn!")
+			$Player.animation_player.play("idle")
+			$Enemy.animation_player.play("idle")
 			attacker = "player"
 			menu.visible = true
 			menu.process_mode = Node.PROCESS_MODE_INHERIT

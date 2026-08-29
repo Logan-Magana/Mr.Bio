@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://df21v57yb8cb"]
 
 [ext_resource type="Script" uid="uid://d1elft0twot6k" path="res://canvas_layer.gd" id="1_jowre"]
+[ext_resource type="Script" uid="uid://do48eylynnpgi" path="res://game_menu.gd" id="1_yd342"]
 [ext_resource type="AudioStream" uid="uid://d2nyjid330uf4" path="res://assets/Start.wav" id="2_pbvm6"]
 [ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="2_rjxss"]
 [ext_resource type="Texture2D" uid="uid://boka3h3sjypl8" path="res://assets/Influenza.png" id="3_3rcmp"]
@@ -11,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dn3prlyqtaeef" path="res://assets/Bacteriophage.png" id="8_scae6"]
 
 [node name="Game_Menu" type="Node2D" unique_id=1317537386]
+script = ExtResource("1_yd342")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1885837228]
 script = ExtResource("1_jowre")
@@ -36,6 +38,7 @@ theme_override_font_sizes/font_size = 25
 text = "Start"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=872122049]
+visible = false
 visibility_layer = 65536
 offset_right = 481.0
 offset_bottom = 268.0
@@ -81,3 +84,19 @@ texture = ExtResource("3_jprcw")
 position = Vector2(418, 196)
 scale = Vector2(3, 3)
 texture = ExtResource("8_scae6")
+
+[node name="Bio" type="Button" parent="." unique_id=1011096232]
+offset_left = 168.0
+offset_top = 120.0
+offset_right = 288.0
+offset_bottom = 144.0
+text = "Biology"
+
+[node name="Geometry" type="Button" parent="." unique_id=1017860743]
+offset_left = 160.0
+offset_top = 80.0
+offset_right = 296.0
+offset_bottom = 104.0
+text = "Geometry"
+
+[connection signal="question_select" from="CanvasLayer" to="." method="_on_canvas_layer_question_select"]

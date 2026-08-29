@@ -22,6 +22,6 @@
 	{
 		"question": "What is the difference between T-Cells and B-Cells?",
 		"answers": ["T-Cells fight viruses directly, while B-Cells produce antibodies", "T-Cells consume dead cells, while B-Cells builds new cells", "T-Cells store energy, while B-Cells fight infections", "T-Cells are only larger than B-Cells"],
-		"correct": 1
+		"correct": 0
 	}
 ]

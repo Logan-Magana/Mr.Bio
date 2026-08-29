@@ -1,0 +1,27 @@
+[
+	{
+		"question": "What is the sum of angles in a triangle?",
+		"answers": ["90 degrees", "180 degrees", "270 degrees", "360 degrees"],
+		"correct": 1
+	},
+	{
+		"question": "What does SOH in SOH-CAH-TOA stand for?",
+		"answers": ["Sine = Opposite/Hypotenuse", "Sine = Adjacent/Hypotenuse", "Sine = Opposite/Adjacent", "Sine = Hypotenuse/Opposite"],
+		"correct": 0
+	},
+	{
+		"question": "What is the Pythagorean theorem?",
+		"answers": ["a+b=c", "a²+b²=c²", "a²-b²=c²", "a×b=c²"],
+		"correct": 1
+	},
+	{
+		"question": "How many degrees are in a right angle?",
+		"answers": ["45", "60", "90", "180"],
+		"correct": 2
+	},
+	{
+		"question": "What is the area formula for a circle?",
+		"answers": ["2πr", "πr²", "πd", "2πr²"],
+		"correct": 1
+	}
+]

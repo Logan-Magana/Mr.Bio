@@ -1,6 +1,6 @@
 extends Node2D
 signal analyze_done(correct)
-var file = FileAccess.open("res://questions.json", FileAccess.READ)
+var file = FileAccess.open(GameData.question_file, FileAccess.READ)
 var json_string = file.get_as_text()
 var questions = JSON.parse_string(json_string)
 var current_question = questions[randi() % questions.size()]

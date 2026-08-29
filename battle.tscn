@@ -407,6 +407,23 @@ tracks/1/keys = {
 "values": [Color(1, 1, 1, 1), Color(2.4533255, 0, 0.16654716, 1), Color(1, 1, 1, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_fljlq"]
+resource_name = "idle"
+length = 1.7666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Player_Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.7, 1.2, 1.5, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(110, 180), Vector2(102, 172), Vector2(92, 164), Vector2(85, 180), Vector2(100, 165), Vector2(108, 175), Vector2(110, 180)]
+}
+
 [sub_resource type="Animation" id="Animation_6t8i5"]
 resource_name = "lunge_attack"
 tracks/0/type = "value"
@@ -438,6 +455,7 @@ tracks/1/keys = {
 _data = {
 &"RESET": SubResource("Animation_i431l"),
 &"fever_up": SubResource("Animation_rggsl"),
+&"idle": SubResource("Animation_fljlq"),
 &"lunge_attack": SubResource("Animation_6t8i5")
 }
 
@@ -466,6 +484,23 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_s5g7e"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Enemy_Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8, 2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(380, 180), Vector2(380, 164), Vector2(380, 180)]
 }
 
 [sub_resource type="Animation" id="Animation_0npn6"]
@@ -498,6 +533,7 @@ tracks/1/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_mhv3b"]
 _data = {
 &"RESET": SubResource("Animation_dw4jg"),
+&"idle": SubResource("Animation_s5g7e"),
 &"lunge_attack": SubResource("Animation_0npn6")
 }
 

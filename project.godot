@@ -18,6 +18,10 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 
 buses/default_bus_layout="uid://5075chx84onn"
 
+[autoload]
+
+GameData="*uid://chb26gfp75uyn"
+
 [display]
 
 window/size/viewport_width=480

@@ -17,5 +17,6 @@ func _on_hp_changed(new_hp, max_hp):
 func perform_attack(target):
 	current_target = target
 	animation_player.play("lunge_attack")
+	await animation_player.animation_finished
 	current_target.stats.take_damage(stats.attack_power)
 	attack_finished.emit()
