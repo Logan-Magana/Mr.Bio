@@ -40,4 +40,6 @@ show_behind_parent = true
 position = Vector2(240, 135)
 texture = ExtResource("5_3qiw4")
 
+[node name="SFX" type="AudioStreamPlayer" parent="." unique_id=2102067091]
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

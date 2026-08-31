@@ -1,6 +1,6 @@
 extends Node2D
 signal minigame_complete()
-var threshold = 15
+var threshold = 20
 @export var cells: PackedScene
 
 # Called when the node enters the scene tree for the first time.

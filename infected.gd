@@ -29,6 +29,7 @@ func _process(delta):
 func _on_area_entered(area):
 	if area is HealthyCell:
 		points += 1
+		$SFX.play()
 		area.queue_free()
 		cell_signaled.emit()
 		print(points)

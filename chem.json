@@ -1,0 +1,52 @@
+[
+	{
+		"question": "What is the atomic number of Carbon?",
+		"answers": ["4", "6", "12", "8"],
+		"correct": 1
+	},
+	{
+		"question": "Which state of matter has no definite shape or volume?",
+		"answers": ["Solid", "Liquid", "Gas", "Plasma"],
+		"correct": 2
+	},
+	{
+		"question": "What is the chemical symbol for Gold?",
+		"answers": ["Go", "Gd", "Au", "Ag"],
+		"correct": 2
+	},
+	{
+		"question": "How many electrons does a neutral Oxygen atom have?",
+		"answers": ["6", "8", "16", "2"],
+		"correct": 1
+	},
+	{
+		"question": "What type of bond involves sharing electrons?",
+		"answers": ["Ionic", "Metallic", "Covalent", "Hydrogen"],
+		"correct": 2
+	},
+	{
+		"question": "What is the pH of a neutral solution?",
+		"answers": ["0", "14", "7", "5"],
+		"correct": 2
+	},
+	{
+		"question": "Which particle has a negative charge?",
+		"answers": ["Proton", "Neutron", "Nucleus", "Electron"],
+		"correct": 3
+	},
+	{
+		"question": "What is the chemical formula for water?",
+		"answers": ["HO", "H2O", "H3O", "OH2"],
+		"correct": 1
+	},
+	{
+		"question": "Which element is most abundant in Earth's atmosphere?",
+		"answers": ["Oxygen", "Carbon", "Hydrogen", "Nitrogen"],
+		"correct": 3
+	},
+	{
+		"question": "What happens to atoms in an exothermic reaction?",
+		"answers": ["They absorb heat", "They release heat", "They split apart", "They gain electrons"],
+		"correct": 1
+	}
+]

@@ -99,4 +99,11 @@ offset_right = 296.0
 offset_bottom = 104.0
 text = "Geometry"
 
+[node name="Chem" type="Button" parent="." unique_id=2120964042]
+offset_left = 152.0
+offset_top = 160.0
+offset_right = 304.0
+offset_bottom = 184.0
+text = "Chemistry"
+
 [connection signal="question_select" from="CanvasLayer" to="." method="_on_canvas_layer_question_select"]

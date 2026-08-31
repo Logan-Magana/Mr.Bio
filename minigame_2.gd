@@ -1,8 +1,10 @@
 extends Node2D
 @export var targets: PackedScene
+@onready var sfx = $SFX
+var sound = [preload("res://assets/fake_laser.wav"), preload("res://assets/real_laser.wav")]
 signal minigame_complete()
 var score = 0
-var threshold = 10
+var threshold = 35
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Controls.visible = true
@@ -30,8 +32,12 @@ func spawn_target():
 func _on_target_clicked( is_real, tar):
 	if is_real == true:
 		score += 5
+		sfx.stream = sound[1]
+		sfx.play()
 	else:
 		score -= 3
+		sfx.stream = sound[0]
+		sfx.play()
 	tar.queue_free()
 	spawn_target()
 

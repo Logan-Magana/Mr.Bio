@@ -25,7 +25,7 @@ var wave_enemies = ["RhinoVirus", "Influenza", "Bacteriophage"]
 var unlocked = ["RhinoVirus"]
 @onready var sfx = $SFX
 var music = [preload("res://assets/Fight1.wav"), preload("res://assets/Fight2.wav"), preload("res://assets/Fight3.wav")]
-var sound = [preload("res://assets/Hit.wav"), preload("res://assets/Ded.wav"), preload("res://assets/Click.ogg")]
+var sound = [preload("res://assets/Hit.wav"), preload("res://assets/Ded.wav"), preload("res://assets/Click.ogg"), preload("res://assets/beam_attack.wav")]
 var type_chart = {
 	"Antibody": {
 		"Replication": 1.5,
@@ -176,6 +176,8 @@ func _on_minigame_complete(mult):
 	animation.visible = true
 	animation.play("1")
 	$Animation.start()
+	sfx.stream = sound[0]
+	sfx.play()
 	$Enemy.stats.take_damage($Player.stats.attack_power * mult * adaptation_mult * type_chart[$Player.stats.unit_type][$Enemy.stats.unit_type])
 	game.queue_free()
 

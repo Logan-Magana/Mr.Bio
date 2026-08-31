@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dktmocl53ocii" path="res://healthy_cells.tscn" id="3_wae4i"]
 [ext_resource type="Texture2D" uid="uid://pelijkyg3jkr" path="res://assets/Cell-Factory.png" id="3_yanj6"]
 [ext_resource type="Texture2D" uid="uid://ej2koomp4n8p" path="res://assets/Interferon.png" id="5_8qm3o"]
+[ext_resource type="AudioStream" uid="uid://44c1kd6tg2am" path="res://assets/signals.wav" id="6_s0wxk"]
 [ext_resource type="Texture2D" uid="uid://b0d20wc0f3oqq" path="res://assets/Arrow_Keys.png" id="6_yanj6"]
 [ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="7_8qm3o"]
 
@@ -37,6 +38,9 @@ one_shot = true
 [node name="GameTimer" type="Timer" parent="Infected" unique_id=1588928090]
 wait_time = 10.0
 one_shot = true
+
+[node name="SFX" type="AudioStreamPlayer" parent="Infected" unique_id=771077035]
+stream = ExtResource("6_s0wxk")
 
 [node name="Controls" type="Label" parent="." unique_id=1800718310]
 offset_left = 36.0

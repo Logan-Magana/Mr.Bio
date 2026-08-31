@@ -5,7 +5,7 @@
 [resource]
 script = ExtResource("1_7u7sr")
 unit_name = "RhinoVirus"
-max_hp = 50
-current_hp = 50
+max_hp = 65
+current_hp = 65
 unit_type = "Replication"
 metadata/_custom_type_script = "uid://de41dm0y0xd0q"
