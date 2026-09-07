@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bx0ulew14cidl" path="res://assets/Macrophage.png" id="2_5xr8p"]
 [ext_resource type="Texture2D" uid="uid://dn3prlyqtaeef" path="res://assets/Bacteriophage.png" id="2_cdg48"]
 [ext_resource type="Texture2D" uid="uid://b0d20wc0f3oqq" path="res://assets/Arrow_Keys.png" id="6_1i1uu"]
+[ext_resource type="AudioStream" uid="uid://2gy7s3t337ut" path="res://assets/M_Eat.wav" id="6_elj0y"]
 [ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="7_0abbc"]
 
 [sub_resource type="Curve2D" id="Curve2D_gqi5c"]
@@ -20,7 +21,7 @@ radius = 13.2454605
 height = 45.59375
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_0abbc"]
-radius = 24.083189
+radius = 16.124516
 
 [node name="Phagocytosis" type="Node2D" unique_id=1219870508]
 script = ExtResource("1_cdg48")
@@ -61,6 +62,9 @@ shape = SubResource("CircleShape2D_0abbc")
 [node name="Timer" type="Timer" parent="Macrophage" unique_id=1829704717]
 wait_time = 8.0
 one_shot = true
+
+[node name="SFX" type="AudioStreamPlayer" parent="Macrophage" unique_id=945006586]
+stream = ExtResource("6_elj0y")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1239500404]
 show_behind_parent = true

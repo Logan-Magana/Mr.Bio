@@ -5,8 +5,8 @@
 [resource]
 script = ExtResource("1_8v1kc")
 unit_name = "Bacteriophage"
-max_hp = 75
-current_hp = 75
-attack_power = 12
+max_hp = 70
+current_hp = 70
+attack_power = 9
 unit_type = "Injection"
 metadata/_custom_type_script = "uid://de41dm0y0xd0q"

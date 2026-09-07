@@ -15,6 +15,7 @@ func _process(delta):
 		velocity.x *= -1
 	if position.y < 0 or position.y > screen_size_half.y / 2:
 		velocity.y *= -1
+	
 
 
 	

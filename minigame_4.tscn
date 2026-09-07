@@ -27,6 +27,7 @@ script = ExtResource("1_80u0h")
 
 [node name="Sprite2D" type="Sprite2D" parent="Infected" unique_id=980559632]
 texture = ExtResource("5_8qm3o")
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Infected" unique_id=2074750309]
 shape = SubResource("CircleShape2D_c5c30")

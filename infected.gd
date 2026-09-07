@@ -14,8 +14,10 @@ func _process(delta):
 	var velocity = Vector2.ZERO
 	if Input.is_action_pressed("Move_Left"):
 		velocity.x -= 1
+		$Sprite2D.flip_h = false
 	if Input.is_action_pressed("Move_Right"):
 		velocity.x += 1
+		$Sprite2D.flip_h = true
 	if Input.is_action_pressed("Move_Down"):
 		velocity.y += 1
 	if Input.is_action_pressed("Move_Up"):

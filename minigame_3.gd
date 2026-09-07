@@ -1,6 +1,6 @@
 extends Node2D
 signal minigame_complete()
-var threshold = 20
+var threshold = 3.5
 func _ready():
 	$Controls.visible = true
 	$Controls_Sprite.visible = true
@@ -14,3 +14,4 @@ func _on_timer_timeout():
 		minigame_complete.emit(1.0)
 	else:
 		minigame_complete.emit(0.5)
+	print($Macrophage.meter)

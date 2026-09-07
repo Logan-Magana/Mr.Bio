@@ -5,8 +5,6 @@
 [resource]
 script = ExtResource("1_yy40r")
 unit_name = "Macrophage"
-max_hp = 110
-current_hp = 110
 attack_power = 12
 unit_type = "Phagocytosis"
 metadata/_custom_type_script = "uid://de41dm0y0xd0q"

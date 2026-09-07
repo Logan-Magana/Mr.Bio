@@ -4,7 +4,8 @@ var is_touching = false
 var points = 1
 var meter = 0
 @export var speed = 400
-# Called when the node enters the scene tree for the first time.
+@onready var sfx = $SFX
+var sound = [preload("res://assets/M_Eat.wav")]
 func _ready():
 	screen_size = get_viewport_rect().size
 	$Timer.start()
@@ -29,7 +30,8 @@ func _process(delta):
 
 func _on_bacteriophage_area_entered(_area: Area2D):
 	is_touching = true
-
+	sfx.play()
 
 func _on_bacteriophage_area_exited(_area: Area2D):
 	is_touching = false
+	sfx.stop()

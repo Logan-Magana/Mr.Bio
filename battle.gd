@@ -1,6 +1,6 @@
 extends Node2D
 
-enum BattleState { INTRO, PLAYER_TURN, MINIGAME, ENEMY_TURN, RESOLVE, VICTORY, DEFEAT }
+enum BattleState { INTRO, PLAYER_TURN, MINIGAME, ENEMY_TURN, RESOLVE, VICTORY, DEFEAT, ANALYZE }
 
 var current_state: BattleState = BattleState.INTRO
 @export var rhinovirus: UnitStats
@@ -18,6 +18,7 @@ var attacker = null
 var menu = null
 var last_attack = ""
 var adaptation_mult = 1.0
+var diff_mult = 1.0
 var charges = 3
 var animation = null
 var wave = 0
@@ -59,6 +60,7 @@ func _ready():
 	$Win.visible = false
 	$Lose.visible = false
 	$Wave.visible = false
+	$Dodge.visible = false
 	menu = pick.instantiate()
 	add_child(menu)
 	menu.visible = false
@@ -90,7 +92,7 @@ func change_state(new_state: BattleState):
 		BattleState.ENEMY_TURN:
 			attacker = "enemy"
 			print("Enemy's turn!")
-			$Enemy.perform_attack($Player)
+			$Enemy.perform_attack($Player, diff_mult)
 			await get_tree().create_timer(0.5).timeout
 			sfx.stream = sound[0]
 			sfx.play()
@@ -101,24 +103,28 @@ func change_state(new_state: BattleState):
 			elif attacker == "enemy" and $Player.stats.current_hp == 0:
 				change_state(BattleState.DEFEAT)
 			elif attacker == "player":
-				change_state(BattleState.ENEMY_TURN)
+				change_state(BattleState.ANALYZE)
 			else:
 				change_state(BattleState.PLAYER_TURN)
 		BattleState.VICTORY:
-			if wave == wave_enemies.size() - 1:
-				$Win.visible = true
-				$Menu_Button.visible = true
-				await get_tree().create_timer(1.2).timeout
-				$Win.visible = false
-				print("You win!")
-			else:
-				next_wave()
+			#if wave == wave_enemies.size() - 1:
+			#	$Win.visible = true
+			#	$Menu_Button.visible = true
+			#	await get_tree().create_timer(1.2).timeout
+			#	$Win.visible = false
+			#	print("You win!")
+			#else:
+			next_wave()
 		BattleState.DEFEAT:
 			$Lose.visible = true
 			$Menu_Button.visible = true
 			await get_tree().create_timer(1.2).timeout
 			$Lose.visible = false
 			print("You lose...")
+		BattleState.ANALYZE:
+			game = study.instantiate()
+			add_child(game)
+			game.analyze_done.connect(_on_analyze_done)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -136,19 +142,12 @@ func _on_attack_picked(attack_name):
 	else:
 		adaptation_mult = 1.0
 		last_attack = attack_name
-	if attack_name == "Analyze":
-		game = study.instantiate()
-		add_child(game)
-		game.analyze_done.connect(_on_analyze_done)
-	elif attack_name == "Inspect":
+	if attack_name == "Inspect":
 		game = blueprint.instantiate()
 		add_child(game)
 		game.open(unlocked)
 		game.x_pressed.connect(_on_x_pressed)
-
-	elif charges >= 1:
-		charges -= 1
-		$Player/Charges.value -= 1
+	else:
 		match attack_name:
 			"Fever":
 				game = mini_1_scene.instantiate()
@@ -166,7 +165,7 @@ func _on_attack_picked(attack_name):
 		add_child(game)
 		game.minigame_complete.connect(_on_minigame_complete)
 	change_state(BattleState.MINIGAME)
-	menu.update_charges(charges)
+	#menu.update_charges(charges)
 
 func _on_attack_finished():
 	change_state(BattleState.RESOLVE)
@@ -182,39 +181,54 @@ func _on_minigame_complete(mult):
 	game.queue_free()
 
 func _on_analyze_done(correct):
+	game.queue_free()
 	if correct:
 		charges += 1
 		$Player/Charges.value += 1
+		$Dodge.visible = true
+		await get_tree().create_timer(0.8).timeout
+		$Dodge.visible = false
+		change_state(BattleState.PLAYER_TURN)
 	else:
 		charges += 0.5
 		$Player/Charges.value += 0.5
-	game.queue_free()
-	menu.update_charges(charges)
-	change_state(BattleState.RESOLVE)
+		change_state(BattleState.ENEMY_TURN)
+	#menu.update_charges(charges)
+	
 	
 func next_wave():
 	sfx.stream = sound[1]
 	sfx.play()
 	wave += 1
+	print(wave_enemies[wave % wave_enemies.size()])
 	$Enemy.stats.hp_changed.disconnect($Enemy._on_hp_changed)
-	match wave_enemies[wave]:
+	match wave_enemies[wave % wave_enemies.size()]:
+		"RhinoVirus":
+			$Enemy.stats = rhinovirus
+			$Enemy/Enemy_Sprite.texture = load("res://assets/RhinoVirus.png")
 		"Influenza":
 			$Enemy.stats = influenza
 			$Enemy/Enemy_Sprite.texture = load("res://assets/Influenza.png")
 		"Bacteriophage":
 			$Enemy.stats = bacteriophage
 			$Enemy/Enemy_Sprite.texture = load("res://assets/Bacteriophage.png")
-	$Enemy.stats.hp_changed.connect($Enemy._on_hp_changed)
+	$Wave.visible = true
+	await get_tree().create_timer(0.8).timeout
+	if wave < 3:
+		unlocked.append(wave_enemies[wave])
+	else:
+		diff_mult += 0.2
+		$Enemy/AnimationPlayer.assigned_animation = "diffuculty"
+		$Enemy/AnimationPlayer.seek(diff_mult/10 + 0.2, true)
+	$Wave.visible = false
+	$Enemy.stats.max_hp *= diff_mult
 	$Enemy.stats.current_hp = $Enemy.stats.max_hp
 	$Enemy/HealthBar.max_value = $Enemy.stats.max_hp
 	$Enemy/HealthBar.value = $Enemy.stats.current_hp
-	$Wave.visible = true
+	$Enemy.stats.hp_changed.connect($Enemy._on_hp_changed)
 	$Player/Charges.value +=1
 	charges += 1
-	menu.update_charges(charges)
-	await get_tree().create_timer(0.8).timeout
-	$Wave.visible = false
-	unlocked.append(wave_enemies[wave])
+	#menu.update_charges(charges)
 	change_state(BattleState.PLAYER_TURN)
 func _on_animation_timeout():
 	animation.visible = false
