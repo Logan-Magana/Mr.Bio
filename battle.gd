@@ -26,7 +26,7 @@ var wave_enemies = ["RhinoVirus", "Influenza", "Bacteriophage"]
 var unlocked = ["RhinoVirus"]
 @onready var sfx = $SFX
 var music = [preload("res://assets/Fight1.wav"), preload("res://assets/Fight2.wav"), preload("res://assets/Fight3.wav")]
-var sound = [preload("res://assets/Hit.wav"), preload("res://assets/Ded.wav"), preload("res://assets/Click.ogg"), preload("res://assets/beam_attack.wav")]
+var sound = [preload("res://assets/Hit.wav"), preload("res://assets/Ded.wav"), preload("res://assets/Click.ogg"), preload("res://assets/Fever_Build_Up.wav")]
 var type_chart = {
 	"Antibody": {
 		"Replication": 1.5,
@@ -186,6 +186,7 @@ func _on_analyze_done(correct):
 		charges += 1
 		$Player/Charges.value += 1
 		$Dodge.visible = true
+		$Enemy/AnimationPlayer.play("lunge_attack")
 		await get_tree().create_timer(0.8).timeout
 		$Dodge.visible = false
 		change_state(BattleState.PLAYER_TURN)

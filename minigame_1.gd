@@ -4,7 +4,9 @@ signal minigame_complete()
 @onready var heat_meter = $Heat_Meter
 var animation_length = 1.0
 var threshold = 90
+@onready var sfx = $SFX
 func _ready() -> void:
+	sfx.stream = preload("res://assets/Fever_Build_Up.wav")
 	$Player/AnimationPlayer.assigned_animation = "fever_charge_up"
 	heat_meter.value = 0
 	$Controls.visible = true
@@ -17,10 +19,12 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("Fever_Game") and $Timer.time_left > 0:
 		heat_meter.value += 2
+		sfx.play()
 	var meter_ratio = heat_meter.value / heat_meter.max_value
 	$Player/AnimationPlayer.seek( meter_ratio * animation_length, true)
 
 func _on_timer_timeout() -> void:
+	await sfx.finished
 	if heat_meter.value >= threshold:
 		minigame_complete.emit(1.0)
 		print(1.0)

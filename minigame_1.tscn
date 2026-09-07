@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cofcn6ggu4s7b" path="res://assets/T-Cell.png" id="2_0hvi2"]
 [ext_resource type="Texture2D" uid="uid://d1ll770q8wlum" path="res://assets/Space.png" id="2_gi7k6"]
 [ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="4_r6gmb"]
+[ext_resource type="AudioStream" uid="uid://dehdgiqccfbv2" path="res://assets/Fever_Build_Up.wav" id="5_wh6qq"]
 
 [sub_resource type="Animation" id="Animation_r6gmb"]
 length = 0.001
@@ -104,5 +105,8 @@ texture = ExtResource("2_gi7k6")
 show_behind_parent = true
 position = Vector2(240, 135)
 texture = ExtResource("4_r6gmb")
+
+[node name="SFX" type="AudioStreamPlayer" parent="." unique_id=1670178677]
+stream = ExtResource("5_wh6qq")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://cfio83rqe0bb" path="res://macrophage.gd" id="1_gqi5c"]
 [ext_resource type="Texture2D" uid="uid://bx0ulew14cidl" path="res://assets/Macrophage.png" id="2_5xr8p"]
 [ext_resource type="Texture2D" uid="uid://dn3prlyqtaeef" path="res://assets/Bacteriophage.png" id="2_cdg48"]
+[ext_resource type="Script" uid="uid://diu4o3bwkoww8" path="res://bacteriophage.gd" id="3_jqvox"]
 [ext_resource type="Texture2D" uid="uid://b0d20wc0f3oqq" path="res://assets/Arrow_Keys.png" id="6_1i1uu"]
 [ext_resource type="AudioStream" uid="uid://2gy7s3t337ut" path="res://assets/M_Eat.wav" id="6_elj0y"]
 [ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="7_0abbc"]
@@ -20,8 +21,44 @@ point_count = 16
 radius = 13.2454605
 height = 45.59375
 
+[sub_resource type="Animation" id="Animation_jqvox"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_lpvao"]
+resource_name = "eaten"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.9999998, 0.18842122, 0.58358806, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_txmog"]
+_data = {
+&"RESET": SubResource("Animation_jqvox"),
+&"eaten": SubResource("Animation_lpvao")
+}
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_0abbc"]
-radius = 16.124516
+radius = 18.0
 
 [node name="Phagocytosis" type="Node2D" unique_id=1219870508]
 script = ExtResource("1_cdg48")
@@ -39,6 +76,7 @@ script = ExtResource("1_33dbb")
 [node name="Bacteriophage" type="Area2D" parent="Path2D/PathFollow2D" unique_id=46145667]
 position = Vector2(1.9073486e-06, 0)
 rotation = 1.6842427
+script = ExtResource("3_jqvox")
 
 [node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/Bacteriophage" unique_id=754293486]
 scale = Vector2(1.25, 1.25)
@@ -46,6 +84,9 @@ texture = ExtResource("2_cdg48")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/Bacteriophage" unique_id=507691822]
 shape = SubResource("CapsuleShape2D_1i1uu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D/PathFollow2D/Bacteriophage" unique_id=1261308269]
+libraries/ = SubResource("AnimationLibrary_txmog")
 
 [node name="Macrophage" type="Area2D" parent="." unique_id=608962569]
 position = Vector2(200, 30)
@@ -85,4 +126,5 @@ texture = ExtResource("6_1i1uu")
 
 [connection signal="area_entered" from="Path2D/PathFollow2D/Bacteriophage" to="Macrophage" method="_on_bacteriophage_area_entered"]
 [connection signal="area_exited" from="Path2D/PathFollow2D/Bacteriophage" to="Macrophage" method="_on_bacteriophage_area_exited"]
+[connection signal="area_entered" from="Macrophage" to="Path2D/PathFollow2D/Bacteriophage" method="_on_macrophage_area_entered"]
 [connection signal="timeout" from="Macrophage/Timer" to="." method="_on_timer_timeout"]

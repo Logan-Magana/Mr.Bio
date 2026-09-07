@@ -638,6 +638,7 @@ offset_bottom = 30.0
 libraries/ = SubResource("AnimationLibrary_dw4jg")
 
 [node name="Charges" type="TextureProgressBar" parent="Player" unique_id=1423819745]
+visible = false
 offset_left = 8.0
 offset_top = 32.0
 offset_right = 104.0
