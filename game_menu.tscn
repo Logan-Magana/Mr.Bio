@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://do48eylynnpgi" path="res://game_menu.gd" id="1_yd342"]
 [ext_resource type="AudioStream" uid="uid://d2nyjid330uf4" path="res://assets/Start.wav" id="2_pbvm6"]
 [ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="2_rjxss"]
+[ext_resource type="PackedScene" uid="uid://r8ox5c22sy86" path="res://characters.tscn" id="2_tklej"]
 [ext_resource type="Texture2D" uid="uid://boka3h3sjypl8" path="res://assets/Influenza.png" id="3_3rcmp"]
 [ext_resource type="Texture2D" uid="uid://cofcn6ggu4s7b" path="res://assets/T-Cell.png" id="3_jprcw"]
 [ext_resource type="Texture2D" uid="uid://dkycer6fle5g7" path="res://assets/RhinoVirus.png" id="4_pbvm6"]
@@ -13,6 +14,7 @@
 
 [node name="Game_Menu" type="Node2D" unique_id=1317537386]
 script = ExtResource("1_yd342")
+character = ExtResource("2_tklej")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1885837228]
 script = ExtResource("1_jowre")

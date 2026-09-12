@@ -8,7 +8,7 @@ func _ready():
 	screen_size = get_viewport_rect().size
 	area_entered.connect(_on_area_entered)
 	$CellTimer.start()
-	
+	$AnimationPlayer.play("infected")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO
@@ -36,5 +36,7 @@ func _on_area_entered(area):
 		cell_signaled.emit()
 		print(points)
 func _on_cell_timer_timeout():
-	position = Vector2(230,190)
+	position = Vector2(230,250)
 	$CellTimer.start()
+	$AnimationPlayer.play("RESET")
+	$AnimationPlayer.play("infected")

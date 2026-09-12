@@ -1,6 +1,6 @@
 extends Node2D
-
-
+@export var character:PackedScene
+var scene = null
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$Bio.pressed.connect(_on_bio_button_pressed)
@@ -35,6 +35,12 @@ func _on_chem_button_pressed():
 	start_up()
 
 func _on_canvas_layer_question_select() -> void:
+	scene = character.instantiate()
+	add_child(scene)
+	scene.next_menu.connect(_on_next_menu)
+	
+func _on_next_menu():
+	scene.queue_free()
 	$Bio.visible = true
 	$Geometry.visible = true
 	$Chem.visible = true

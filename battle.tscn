@@ -13,8 +13,10 @@
 [ext_resource type="Resource" uid="uid://dphicjwlxjix5" path="res://rhino_virus_stats.tres" id="4_i431l"]
 [ext_resource type="PackedScene" uid="uid://dia0abibpowly" path="res://minigame_3.tscn" id="5_b1i6x"]
 [ext_resource type="Texture2D" uid="uid://dkycer6fle5g7" path="res://assets/RhinoVirus.png" id="6_0npn6"]
+[ext_resource type="Resource" uid="uid://c7835t1fiu77s" path="res://b_cell_stats.tres" id="6_j128n"]
 [ext_resource type="PackedScene" uid="uid://c48l6hpthebr5" path="res://minigame_4.tscn" id="6_sl0w2"]
 [ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="7_0npn6"]
+[ext_resource type="Resource" uid="uid://d4l4rsnjblifn" path="res://macrophage_stats.tres" id="7_nt5qs"]
 [ext_resource type="PackedScene" uid="uid://c6bksp105v4u7" path="res://blueprint.tscn" id="7_rggsl"]
 [ext_resource type="Texture2D" uid="uid://dkn4iq2n46gwh" path="res://assets/Fire.png" id="13_elvfr"]
 [ext_resource type="Texture2D" uid="uid://dpw327jmldqb5" path="res://assets/I-Beams.png" id="14_4s0ev"]
@@ -570,6 +572,9 @@ script = ExtResource("1_ip7xm")
 rhinovirus = ExtResource("4_i431l")
 influenza = ExtResource("3_22sa7")
 bacteriophage = ExtResource("4_aacmo")
+t_cell = ExtResource("3_7sfm4")
+b_cell = ExtResource("6_j128n")
+macrophage = ExtResource("7_nt5qs")
 pick = ExtResource("2_ol6im")
 study = ExtResource("3_pihy1")
 blueprint = ExtResource("7_rggsl")

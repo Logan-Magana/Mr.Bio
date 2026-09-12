@@ -24,7 +24,8 @@ func _process(_delta: float) -> void:
 	$Player/AnimationPlayer.seek( meter_ratio * animation_length, true)
 
 func _on_timer_timeout() -> void:
-	await sfx.finished
+	if sfx.playing:
+		await sfx.finished
 	if heat_meter.value >= threshold:
 		minigame_complete.emit(1.0)
 		print(1.0)

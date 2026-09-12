@@ -1,6 +1,6 @@
 extends Node
 var question_file = "res://questions.json"
-
+var player = "T-Cell"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass

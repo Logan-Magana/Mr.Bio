@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://r8ox5c22sy86"]
+
+[ext_resource type="Texture2D" uid="uid://cofcn6ggu4s7b" path="res://assets/T-Cell.png" id="1_rhnhp"]
+[ext_resource type="Script" uid="uid://2chttcwktacn" path="res://characters.gd" id="1_vcy1y"]
+[ext_resource type="Script" uid="uid://cox216cwaoqvg" path="res://t_cell.gd" id="2_e618v"]
+[ext_resource type="Texture2D" uid="uid://c60440qx22df7" path="res://assets/B-Cell.png" id="2_ewidt"]
+[ext_resource type="Texture2D" uid="uid://bx0ulew14cidl" path="res://assets/Macrophage.png" id="3_ifjty"]
+[ext_resource type="Script" uid="uid://caje8igyvgsr4" path="res://b_cell.gd" id="4_1424l"]
+[ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="4_gwi7s"]
+[ext_resource type="Script" uid="uid://de0u2270n6irt" path="res://macro.gd" id="6_rw00v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcy1y"]
+size = Vector2(124, 176)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e618v"]
+size = Vector2(126, 139)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1424l"]
+size = Vector2(160, 171)
+
+[node name="characters" type="CanvasLayer" unique_id=56116377]
+script = ExtResource("1_vcy1y")
+
+[node name="T-Cell" type="Area2D" parent="." unique_id=1694631362]
+position = Vector2(77, 104)
+script = ExtResource("2_e618v")
+char = "T-Cell"
+
+[node name="Label" type="Label" parent="T-Cell" unique_id=1922673296]
+offset_left = -72.0
+offset_top = 34.0
+offset_right = 78.0
+offset_bottom = 183.0
+text = "T-Cell
+The assassin of the immune system"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="T-Cell" unique_id=1724796281]
+scale = Vector2(2, 2)
+texture = ExtResource("1_rhnhp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="T-Cell" unique_id=1887993855]
+position = Vector2(4, 58)
+shape = SubResource("RectangleShape2D_vcy1y")
+
+[node name="B-Cell" type="Area2D" parent="." unique_id=1971893939]
+position = Vector2(225, 104)
+script = ExtResource("4_1424l")
+char = "B-Cell"
+
+[node name="Sprite2D2" type="Sprite2D" parent="B-Cell" unique_id=814433252]
+scale = Vector2(2, 2)
+texture = ExtResource("2_ewidt")
+
+[node name="Label2" type="Label" parent="B-Cell" unique_id=248073699]
+offset_left = -72.0
+offset_top = 32.0
+offset_right = 78.0
+offset_bottom = 181.0
+text = "B-Cell
+The antibody machine"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="B-Cell" unique_id=1659247806]
+position = Vector2(3, 37.5)
+shape = SubResource("RectangleShape2D_e618v")
+
+[node name="Macrophage" type="Area2D" parent="." unique_id=1290750132]
+position = Vector2(373, 104)
+script = ExtResource("6_rw00v")
+char = "Macrophage"
+
+[node name="Sprite2D3" type="Sprite2D" parent="Macrophage" unique_id=548468000]
+position = Vector2(8, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("3_ifjty")
+
+[node name="Label3" type="Label" parent="Macrophage" unique_id=1068939965]
+offset_left = -64.0
+offset_top = 24.0
+offset_right = 86.0
+offset_bottom = 173.0
+text = "Macrophage
+The janitor that eats up the mess"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Macrophage" unique_id=1421935710]
+position = Vector2(11, 49.5)
+shape = SubResource("RectangleShape2D_1424l")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1840697584]
+show_behind_parent = true
+z_index = -1
+position = Vector2(240, 135)
+texture = ExtResource("4_gwi7s")
+
+[connection signal="input_event" from="T-Cell" to="T-Cell" method="_on_input_event"]
+[connection signal="input_event" from="B-Cell" to="B-Cell" method="_on_input_event"]
+[connection signal="input_event" from="Macrophage" to="Macrophage" method="_on_input_event"]

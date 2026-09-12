@@ -5,6 +5,8 @@
 [resource]
 script = ExtResource("1_i72nk")
 unit_name = "T-Cell"
+max_hp = 50
+current_hp = 50
 attack_power = 50
 unit_type = "Antibody"
 metadata/_custom_type_script = "uid://de41dm0y0xd0q"

@@ -6,6 +6,9 @@ var current_state: BattleState = BattleState.INTRO
 @export var rhinovirus: UnitStats
 @export var influenza: UnitStats
 @export var bacteriophage: UnitStats
+@export var t_cell: UnitStats
+@export var b_cell: UnitStats
+@export var macrophage: UnitStats
 @export var pick: PackedScene
 @export var study: PackedScene
 @export var blueprint: PackedScene
@@ -78,6 +81,20 @@ func change_state(new_state: BattleState):
 		BattleState.INTRO:
 			print("Battle starting...")
 			$Fight_Timer.start()
+			match GameData.player:
+				"T-Cell":
+					$Player/Player_Sprite.texture = load("res://assets/T-Cell.png")
+					$Player.stats = t_cell
+				"B-Cell":
+					$Player/Player_Sprite.texture = load("res://assets/B-Cell.png")
+					$Player.stats = b_cell
+				"Macrophage":
+					$Player/Player_Sprite.texture = load("res://assets/Macrophage.png")
+					$Player.stats = macrophage
+			$Player.stats.current_hp = $Player.stats.max_hp
+			$Player/HealthBar.max_value = $Player.stats.max_hp
+			$Player/HealthBar.value = $Player.stats.current_hp
+			$Player.stats.hp_changed.connect($Player._on_hp_changed)
 		BattleState.PLAYER_TURN:
 			print("Player's turn!")
 			$Player.animation_player.play("idle")
