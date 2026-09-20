@@ -100,6 +100,14 @@ z_index = -1
 position = Vector2(240, 135)
 texture = ExtResource("4_gwi7s")
 
+[node name="Label" type="Label" parent="." unique_id=2095371979]
+offset_left = 100.0
+offset_top = 17.0
+offset_right = 372.0
+offset_bottom = 33.0
+theme_override_colors/font_color = Color(0.7019608, 0.9137255, 0.99607843, 1)
+text = "Pick Your Fighter"
+
 [connection signal="input_event" from="T-Cell" to="T-Cell" method="_on_input_event"]
 [connection signal="input_event" from="B-Cell" to="B-Cell" method="_on_input_event"]
 [connection signal="input_event" from="Macrophage" to="Macrophage" method="_on_input_event"]

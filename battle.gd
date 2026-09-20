@@ -23,6 +23,7 @@ var last_attack = ""
 var adaptation_mult = 1.0
 var diff_mult = 1.0
 var charges = 3
+var block_mult = 1.0
 var animation = null
 var wave = 0
 var wave_enemies = ["RhinoVirus", "Influenza", "Bacteriophage"]
@@ -109,7 +110,7 @@ func change_state(new_state: BattleState):
 		BattleState.ENEMY_TURN:
 			attacker = "enemy"
 			print("Enemy's turn!")
-			$Enemy.perform_attack($Player, diff_mult)
+			$Enemy.perform_attack($Player, diff_mult, block_mult)
 			await get_tree().create_timer(0.5).timeout
 			sfx.stream = sound[0]
 			sfx.play()
@@ -206,10 +207,12 @@ func _on_analyze_done(correct):
 		$Enemy/AnimationPlayer.play("lunge_attack")
 		await get_tree().create_timer(0.8).timeout
 		$Dodge.visible = false
-		change_state(BattleState.PLAYER_TURN)
+		block_mult = 0.5
+		change_state(BattleState.ENEMY_TURN)
 	else:
 		charges += 0.5
 		$Player/Charges.value += 0.5
+		block_mult = 1.0
 		change_state(BattleState.ENEMY_TURN)
 	#menu.update_charges(charges)
 	

@@ -14,9 +14,9 @@ func _ready():
 func _on_hp_changed(new_hp, max_hp):
 	health_bar.max_value = max_hp
 	health_bar.value = new_hp
-func perform_attack(target, diff_mult):
+func perform_attack(target, diff_mult, block_mult):
 	current_target = target
 	animation_player.play("lunge_attack")
 	await animation_player.animation_finished
-	current_target.stats.take_damage(stats.attack_power * diff_mult)
+	current_target.stats.take_damage(stats.attack_power * diff_mult * block_mult)
 	attack_finished.emit()
