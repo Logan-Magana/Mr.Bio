@@ -31,7 +31,7 @@ func _on_geo_button_pressed():
 	GameData.question_file = "res://geometry_q.json"
 	start_up()
 func _on_chem_button_pressed():
-	GameData.question_file = "res://chem.json"
+	GameData.question_file = "res://fall_midterm_chem.json"
 	start_up()
 
 func _on_canvas_layer_question_select() -> void:
@@ -41,11 +41,11 @@ func _on_canvas_layer_question_select() -> void:
 	
 func _on_next_menu():
 	scene.queue_free()
-	$Bio.visible = true
-	$Geometry.visible = true
+	#$Bio.visible = true
+	#$Geometry.visible = true
 	$Chem.visible = true
-	$Bio.process_mode = Node.PROCESS_MODE_INHERIT
-	$Geometry.process_mode = Node.PROCESS_MODE_INHERIT
+	#$Bio.process_mode = Node.PROCESS_MODE_INHERIT
+	#$Geometry.process_mode = Node.PROCESS_MODE_INHERIT
 	$Chem.process_mode = Node.PROCESS_MODE_INHERIT
 	$CanvasLayer/Button.visible = false
 	$CanvasLayer/Button.process_mode = Node.PROCESS_MODE_DISABLED

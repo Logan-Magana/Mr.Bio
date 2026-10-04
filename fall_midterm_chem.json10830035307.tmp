@@ -1,0 +1,254 @@
+[
+	{
+		"question": "Which of the following could be an isotope of lithium?",
+		"answers": ["3p,3n,3e", "4p,3n,3e", "3p,4n,3e", "2p,2n,2e"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "Carbon has three isotopes: C-12, C-13, and C-14. Which average atomic mass is NOT possible for carbon?",
+		"answers": ["12.1311 amu", "13.399 amu", "13.001 amu", "11.8874 amu"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Which isotope symbol is incorrect?",
+		"answers": ["⁹³Zr", "⁸¹Br", "¹⁵P", "²⁶Al"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "Chlorine has two isotopes (Cl-35 and Cl-37) and an average atomic mass of 35.45 amu. What is the chance one chlorine atom has a mass of exactly 35.45 amu?",
+		"answers": ["~25%", "~35%", "~75%", "0%"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Carbon dioxide (CO₂) is a(n):",
+		"answers": ["Element", "Compound", "Homogeneous mixture", "Heterogeneous mixture"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "Silver (Ag) is a(n):",
+		"answers": ["Compound", "Heterogeneous mixture", "Element", "Homogeneous mixture"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "Sand is a(n):",
+		"answers": ["Element", "Compound", "Homogeneous mixture", "Heterogeneous mixture"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Orange juice is a(n):",
+		"answers": ["Element", "Compound", "Homogeneous mixture", "Heterogeneous mixture"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Table salt is a(n):",
+		"answers": ["Element", "Heterogeneous mixture", "Homogeneous mixture", "Compound"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Diamond is a(n):",
+		"answers": ["Compound", "Heterogeneous mixture", "Element", "Homogeneous mixture"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "Gold jewelry is a(n):",
+		"answers": ["Element", "Compound", "Heterogeneous mixture", "Homogeneous mixture"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "Bronze is a(n):",
+		"answers": ["Element", "Compound", "Homogeneous mixture", "Heterogeneous mixture"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Oil and water is a _____ mixture.",
+		"answers": ["Homogeneous", "Heterogeneous", "Compound", "Element"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "Orange juice is a _____ mixture.",
+		"answers": ["Homogeneous", "Heterogeneous", "Compound", "Element"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "Steel is a _____ mixture.",
+		"answers": ["Heterogeneous", "Compound", "Homogeneous", "Element"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "Chocolate chip cookies are a _____ mixture.",
+		"answers": ["Homogeneous", "Element", "Compound", "Heterogeneous"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Butter is a _____ mixture.",
+		"answers": ["Heterogeneous", "Homogeneous", "Element", "Compound"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "Soda is a _____ mixture.",
+		"answers": ["Heterogeneous", "Element", "Compound", "Homogeneous"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Chopping wood is a _____ change.",
+		"answers": ["Chemical", "Nuclear", "Physical", "Biological"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "Ice melting is a _____ change.",
+		"answers": ["Chemical", "Physical", "Nuclear", "Biological"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "Burning wood is a _____ change.",
+		"answers": ["Physical", "Nuclear", "Biological", "Chemical"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Cracking a glowstick is a _____ change.",
+		"answers": ["Physical", "Nuclear", "Chemical", "Biological"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "A disposable handwarmer produces heat through a _____ change.",
+		"answers": ["Physical", "Nuclear", "Biological", "Chemical"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Breaking glass is a _____ change.",
+		"answers": ["Chemical", "Nuclear", "Biological", "Physical"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "Cutting hair is a _____ change.",
+		"answers": ["Chemical", "Physical", "Nuclear", "Biological"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "Photosynthesis is a _____ change.",
+		"answers": ["Physical", "Nuclear", "Chemical", "Biological"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+	"question": "How many significant figures are in 4007.1?",
+	"correct": "5",
+	"type": "typing"
+  },
+  {
+	"question": "How many significant figures are in 16.030?",
+	"correct": "5",
+	"type": "typing"
+  },
+  {
+	"question": "How many significant figures are in 0.0005602?",
+	"correct": "4",
+	"type": "typing"
+  },
+  {
+	"question": "How many significant figures are in 48000?",
+	"correct": "2",
+	"type": "typing"
+  },
+  {
+	"question": "How many significant figures are in 23050?",
+	"correct": "4",
+	"type": "typing"
+  },
+  {
+	"question": "How many significant figures are in 105.000?",
+	"correct": "6",
+	"type": "typing"
+  },
+  {
+	"question": "Solve 153 × 0.36 ÷ 2 and round to the correct number of significant figures.",
+	"correct": "30",
+	"type": "typing"
+  },
+  {
+	"question": "Solve 15000 ÷ 2.405 and round to the correct number of significant figures.",
+	"correct": "6200",
+	"type": "typing"
+  },
+  {
+	"question": "Solve 2.00 + 1.504 − 3.1162 and round correctly.",
+	"correct": "0.39",
+	"type": "typing"
+  },
+  {
+	"question": "Solve 2.666 × 3.105 × 6.22 and round to the correct number of significant figures.",
+	"correct": "51.5",
+	"type": "typing"
+  },
+ 
+  {
+	"question": "Convert 0.673 km to mm.",
+	"correct": "673000 mm",
+	"type": "typing"
+  },
+  {
+	"question": "Convert 7.10 × 10^6 cm to km.",
+	"correct": "71.0 km",
+	"type": "typing"
+  },
+  {
+	"question": "Convert 2.88 × 10^4 µg to g.",
+	"correct": "0.0288 g",
+	"type": "typing"
+  },
+  {
+	"question": "Convert 5.90 × 10^12 nL to kL.",
+	"correct": "5.90 kL",
+	"type": "typing"
+  },
+  {
+	"question": "A 22.1 g stone is dropped into a graduated cylinder. The water level rises from 24.6 mL to 47.2 mL. What is the density of the stone?",
+	"correct": "0.978 g/mL",
+	"type": "typing"
+  },
+  {
+	"question": "Copper has a density of 8.96 g/cm³. A sample raises the water level from 20.0 mL to 24.3 mL. What is the mass of the copper?",
+	"correct": "39 g",
+	"type": "typing"
+  },
+  {
+	"question": "A sample of lead has a mass of 15.2 g. Using a lead density of 11.3 g/cm³, what is its volume?",
+	"correct": "1.35 cm³",
+	"type": "typing"
+  },
+  {
+	"question": "A rectangular metal prism is 3.6 cm long, 2.1 cm wide, and 4.5 cm high, and has a mass of 38.0 g. What is its density?",
+	"correct": "1.1 g/cm³",
+	"type": "typing"
+  },
+  {
+	"question": "A metal cube has a side length of 1.53 cm and a mass of 9.67 g. What is its density?",
+	"correct": "2.70 g/cm³",
+	"type": "typing"
+  }
+]

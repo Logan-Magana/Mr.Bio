@@ -1,22 +1,42 @@
 [gd_scene format=3 uid="uid://busiplr5pga56"]
 
 [ext_resource type="Script" uid="uid://ctf1rau1nqmfo" path="res://questions.gd" id="1_uqn54"]
-[ext_resource type="FontFile" uid="uid://kj7f3nghkr76" path="res://assets/VT323-Regular.ttf" id="2_nn7rl"]
 [ext_resource type="Texture2D" uid="uid://bwdql2hdr8nhp" path="res://assets/F-Background.png" id="3_ygnt8"]
-[ext_resource type="Texture2D" uid="uid://dgm0xspd2pf5b" path="res://assets/Lightbulb.png" id="4_dp6bu"]
 
 [node name="Questions" type="Node2D" unique_id=1211834232]
 script = ExtResource("1_uqn54")
 
-[node name="Label" type="Label" parent="." unique_id=719002846]
+[node name="Question" type="RichTextLabel" parent="." unique_id=1008158655]
 offset_right = 480.0
-offset_bottom = 96.0
-size_flags_horizontal = 8
-theme_override_fonts/font = ExtResource("2_nn7rl")
-theme_override_font_sizes/font_size = 30
+offset_bottom = 40.0
+theme_override_font_sizes/normal_font_size = 12
+fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 3
+
+[node name="Background" type="Sprite2D" parent="." unique_id=286261709]
+show_behind_parent = true
+position = Vector2(240, 135)
+texture = ExtResource("3_ygnt8")
+
+[node name="Image" type="TextureRect" parent="." unique_id=474195622]
+visible = false
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Typing" type="LineEdit" parent="." unique_id=1759436756]
+offset_left = 96.0
+offset_top = 152.0
+offset_right = 384.0
+offset_bottom = 192.0
+
+[node name="Submit" type="Button" parent="Typing" unique_id=1767740985]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 48.0
+offset_right = 240.0
+offset_bottom = 72.0
+text = "Confirm"
 
 [node name="Choice-A" type="Button" parent="." unique_id=1404727555]
 offset_left = 8.0
@@ -49,12 +69,3 @@ offset_right = 232.0
 offset_bottom = 264.0
 theme_override_font_sizes/font_size = 10
 autowrap_mode = 3
-
-[node name="Background" type="Sprite2D" parent="." unique_id=286261709]
-show_behind_parent = true
-position = Vector2(240, 135)
-texture = ExtResource("3_ygnt8")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=98077609]
-visible = false
-texture = ExtResource("4_dp6bu")

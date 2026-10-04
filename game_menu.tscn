@@ -88,9 +88,9 @@ texture = ExtResource("8_scae6")
 
 [node name="Bio" type="Button" parent="." unique_id=1011096232]
 offset_left = 168.0
-offset_top = 120.0
+offset_top = 160.0
 offset_right = 288.0
-offset_bottom = 144.0
+offset_bottom = 184.0
 text = "Biology"
 
 [node name="Geometry" type="Button" parent="." unique_id=1017860743]
@@ -101,10 +101,10 @@ offset_bottom = 104.0
 text = "Geometry"
 
 [node name="Chem" type="Button" parent="." unique_id=2120964042]
-offset_left = 152.0
-offset_top = 160.0
-offset_right = 304.0
-offset_bottom = 184.0
+offset_left = 155.0
+offset_top = 121.0
+offset_right = 307.0
+offset_bottom = 145.0
 text = "Chemistry"
 
 [connection signal="question_select" from="CanvasLayer" to="." method="_on_canvas_layer_question_select"]
