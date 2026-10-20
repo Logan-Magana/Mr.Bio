@@ -40,6 +40,7 @@ theme_override_font_sizes/font_size = 25
 text = "Start"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=872122049]
+visible = false
 visibility_layer = 65536
 offset_right = 481.0
 offset_bottom = 274.0
@@ -93,12 +94,13 @@ offset_right = 288.0
 offset_bottom = 184.0
 text = "Biology"
 
-[node name="Geometry" type="Button" parent="." unique_id=1017860743]
-offset_left = 160.0
-offset_top = 80.0
-offset_right = 296.0
-offset_bottom = 104.0
-text = "Geometry"
+[node name="Espanol" type="Button" parent="." unique_id=1017860743]
+offset_left = 134.0
+offset_top = 83.0
+offset_right = 334.0
+offset_bottom = 107.0
+theme_override_font_sizes/font_size = 12
+text = "Espanol (tenses)"
 
 [node name="Chem" type="Button" parent="." unique_id=2120964042]
 offset_left = 155.0

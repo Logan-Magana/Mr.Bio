@@ -1,0 +1,236 @@
+[
+	{
+		"question": "How do you say 'I buy' in the present indicative?",
+		"answers": ["compro", "compré", "compraba", "compraré"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you run' in the present indicative?",
+		"answers": ["corriste", "corres", "corrías", "corrás"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we live' in the present indicative?",
+		"answers": ["vivimos", "viviremos", "vivíamos", "viviríamos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'he/she bought' in the preterite?",
+		"answers": ["compraba", "compra", "compró", "comprará"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I ran' in the preterite?",
+		"answers": ["corrí", "corría", "corro", "correré"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they lived' in the preterite?",
+		"answers": ["vivían", "viven", "vivieron", "vivirán"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I used to buy' in the imperfect indicative?",
+		"answers": ["compré", "compraba", "compraría", "compro"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you used to run' in the imperfect indicative?",
+		"answers": ["corrías", "corriste", "corres", "correrás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we used to live' in the imperfect indicative?",
+		"answers": ["vivimos", "vivíamos", "viviremos", "viviríamos"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I will buy' in the future?",
+		"answers": ["compraré", "compraba", "compré", "compraría"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'he/she will run' in the future?",
+		"answers": ["corrió", "correrá", "corría", "correría"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they will live' in the future?",
+		"answers": ["vivirán", "vivieron", "vivían", "vivirían"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I would buy' in the conditional?",
+		"answers": ["compraré", "compraría", "compraba", "compré"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you would run' in the conditional?",
+		"answers": ["correrías", "corrías", "correrás", "corriste"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we would live' in the conditional?",
+		"answers": ["viviríamos", "viviremos", "vivíamos", "vivimos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I have bought' in the present perfect?",
+		"answers": ["he comprado", "había comprado", "haya comprado", "habré comprado"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you have run' in the present perfect?",
+		"answers": ["habías corrido", "has corrido", "hayas corrido", "habrás corrido"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they have lived' in the present perfect?",
+		"answers": ["habían vivido", "han vivido", "hayan vivido", "habrán vivido"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I had bought' as soon as I had, in the preterite perfect?",
+		"answers": ["hube comprado", "había comprado", "he comprado", "habría comprado"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you had run' as soon as you had, in the preterite perfect ?",
+		"answers": ["habías corrido", "hubiste corrido", "has corrido", "habrías corrido"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they had lived' as soon as they had, in the preterite perfect?",
+		"answers": ["habían vivido", "han vivido", "hubieron vivido", "habrían vivido"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I would have bought' in the conditional perfect?",
+		"answers": ["habría comprado", "había comprado", "habré comprado", "hube comprado"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you would have run' in the conditional perfect?",
+		"answers": ["habrás corrido", "habías corrido", "habrías corrido", "hubiste corrido"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they would have lived' in the conditional perfect?",
+		"answers": ["habrán vivido", "habían vivido", "habrían vivido", "hubieron vivido"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I will have bought' in the future perfect?",
+		"answers": ["habré comprado", "habría comprado", "había comprado", "haya comprado"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you will have run' in the future perfect?",
+		"answers": ["habrías corrido", "habías corrido", "habrás corrido", "hayas corrido"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we will have lived' in the future perfect?",
+		"answers": ["habremos vivido", "habríamos vivido", "habíamos vivido", "hayamos vivido"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": " 'ojalá que yo _____' (present subjunctive)?",
+		"answers": ["compro", "compre", "compraba", "comprara"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": " 'espero que tú _____' (present subjunctive)?",
+		"answers": ["corras", "corres", "corrieras", "correrás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": " 'dudo que nosotros _____' (present subjunctive)?",
+		"answers": ["vivimos", "viviéramos", "vivamos", "viviremos"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": " 'si yo _____' (imperfect subjunctive -ra form)?",
+		"answers": ["compraría", "compré", "comprara", "compre"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": " 'si tú _____' (imperfect subjunctive -ra form)?",
+		"answers": ["corrieras", "correrías", "corras", "corriste"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": " 'si ellos _____' (imperfect subjunctive -ra form)?",
+		"answers": ["vivieran", "vivirían", "vivan", "vivieron"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": " 'espero que yo _____' (present perfect subjunctive)?",
+		"answers": ["haya comprado", "había comprado", "he comprado", "hubiera comprado"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": " 'dudo que tú _____' (present perfect subjunctive)?",
+		"answers": ["has corrido", "habías corrido", "hayas corrido", "hubieras corrido"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": " 'ojalá que ellos _____' (present perfect subjunctive)?",
+		"answers": ["han vivido", "hayan vivido", "habían vivido", "hubieran vivido"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": " 'si yo _____' (past perfect subjunctive -ra form)?",
+		"answers": ["hubiera comprado", "había comprado", "haya comprado", "hubiese comprado"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": " 'si tú _____' (past perfect subjunctive -ra form)?",
+		"answers": ["hubieses corrido", "habías corrido", "hubieras corrido", "hayas corrido"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": " 'si nosotros _____' (past perfect subjunctive -ra form)?",
+		"answers": ["hubiéramos vivido", "hubiésemos vivido", "habíamos vivido", "hayamos vivido"],
+		"correct": 0,
+		"type": "mc"
+	},
+]
