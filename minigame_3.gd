@@ -1,6 +1,6 @@
 extends Node2D
 signal minigame_complete()
-var threshold = 3.5
+var threshold = 2.5
 func _ready():
 	$Controls.visible = true
 	$Controls_Sprite.visible = true
