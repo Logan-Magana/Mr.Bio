@@ -20,18 +20,18 @@ character = ExtResource("2_tklej")
 script = ExtResource("1_jowre")
 
 [node name="Label" type="Label" parent="CanvasLayer" unique_id=475328479]
-offset_left = 140.0
+offset_left = 150.0
 offset_top = 30.0
-offset_right = 320.0
+offset_right = 330.0
 offset_bottom = 60.0
 theme_override_colors/font_color = Color(0.7019608, 0.9137255, 0.99607843, 1)
 theme_override_font_sizes/font_size = 30
 text = "Mr.Bio"
 
 [node name="Button" type="Button" parent="CanvasLayer" unique_id=2041891799]
-offset_left = 160.0
+offset_left = 172.0
 offset_top = 200.0
-offset_right = 293.0
+offset_right = 305.0
 offset_bottom = 233.0
 theme_override_colors/font_color = Color(0.7017021, 0.91472256, 0.9970972, 1)
 theme_override_colors/font_focus_color = Color(0.97071224, 0.9597829, 0.7977092, 1)
@@ -40,7 +40,6 @@ theme_override_font_sizes/font_size = 25
 text = "Start"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=872122049]
-visible = false
 visibility_layer = 65536
 offset_right = 481.0
 offset_bottom = 274.0
@@ -87,6 +86,13 @@ position = Vector2(418, 196)
 scale = Vector2(3, 3)
 texture = ExtResource("8_scae6")
 
+[node name="Chem" type="Button" parent="." unique_id=2120964042]
+offset_left = 155.0
+offset_top = 121.0
+offset_right = 307.0
+offset_bottom = 145.0
+text = "Chemistry"
+
 [node name="Bio" type="Button" parent="." unique_id=1011096232]
 offset_left = 168.0
 offset_top = 160.0
@@ -102,11 +108,20 @@ offset_bottom = 107.0
 theme_override_font_sizes/font_size = 12
 text = "Espanol (tenses)"
 
-[node name="Chem" type="Button" parent="." unique_id=2120964042]
-offset_left = 155.0
-offset_top = 121.0
-offset_right = 307.0
-offset_bottom = 145.0
-text = "Chemistry"
+[node name="Mix" type="Button" parent="." unique_id=1642794627]
+visible = false
+offset_left = 193.0
+offset_top = 107.0
+offset_right = 281.0
+offset_bottom = 131.0
+text = "Mixed"
+
+[node name="Present" type="Button" parent="." unique_id=602406985]
+visible = false
+offset_left = 179.0
+offset_top = 139.0
+offset_right = 299.0
+offset_bottom = 163.0
+text = "Present"
 
 [connection signal="question_select" from="CanvasLayer" to="." method="_on_canvas_layer_question_select"]

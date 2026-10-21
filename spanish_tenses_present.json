@@ -1,0 +1,218 @@
+[
+	{
+		"question": "How do you say 'I buy'?",
+		"answers": ["compro", "compra", "compras", "compramos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you buy'?",
+		"answers": ["compro", "compras", "compra", "compran"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we buy' ?",
+		"answers": ["compran", "compra", "compramos", "compras"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they buy' ?",
+		"answers": ["compra", "compramos", "compras", "compran"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I run'?",
+		"answers": ["corro", "corre", "corres", "corremos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you run'?",
+		"answers": ["corro", "corres", "corre", "corren"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we run'?",
+		"answers": ["corren", "corre", "corremos", "corres"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they run'?",
+		"answers": ["corre", "corremos", "corres", "corren"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I live'?",
+		"answers": ["vivo", "vive", "vives", "vivimos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you live'?",
+		"answers": ["vivo", "vives", "vive", "viven"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we live'?",
+		"answers": ["viven", "vive", "vivimos", "vives"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they live'?",
+		"answers": ["vive", "vivimos", "vives", "viven"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I am proud'?",
+		"answers": ["soy", "eres", "es", "somos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you are proud'?",
+		"answers": ["soy", "eres", "es", "son"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we are proud'?",
+		"answers": ["son", "es", "somos", "eres"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they are proud'?",
+		"answers": ["es", "somos", "eres", "son"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I am at the store'?",
+		"answers": ["estoy", "estás", "está", "estamos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you are at the store'?",
+		"answers": ["estoy", "estás", "está", "están"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we are at the store'?",
+		"answers": ["están", "está", "estamos", "estás"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they are at the store'?",
+		"answers": ["está", "estamos", "estás", "están"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I have'?",
+		"answers": ["tengo", "tienes", "tiene", "tenemos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you have'?",
+		"answers": ["tengo", "tienes", "tiene", "tienen"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we have'?",
+		"answers": ["tienen", "tiene", "tenemos", "tienes"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they have'?",
+		"answers": ["tiene", "tenemos", "tienes", "tienen"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I go'?",
+		"answers": ["voy", "vas", "va", "vamos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you go'?",
+		"answers": ["voy", "vas", "va", "van"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we go'?",
+		"answers": ["van", "va", "vamos", "vas"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they go'?",
+		"answers": ["va", "vamos", "vas", "van"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I do/make'?",
+		"answers": ["hago", "haces", "hace", "hacemos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you do/make'?",
+		"answers": ["hago", "haces", "hace", "hacen"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we do/make'?",
+		"answers": ["hacen", "hace", "hacemos", "haces"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they do/make'?",
+		"answers": ["hace", "hacemos", "haces", "hacen"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'I can'?",
+		"answers": ["puedo", "puedes", "puede", "podemos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'you can'?",
+		"answers": ["puedo", "puedes", "puede", "pueden"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'we can'?",
+		"answers": ["pueden", "puede", "podemos", "puedes"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "How do you say 'they can'?",
+		"answers": ["puede", "podemos", "puedes", "pueden"],
+		"correct": 3,
+		"type": "mc"
+	}
+]
