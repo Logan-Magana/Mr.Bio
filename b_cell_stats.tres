@@ -5,8 +5,8 @@
 [resource]
 script = ExtResource("1_rjrbp")
 unit_name = "B-Cell"
-max_hp = 80
-current_hp = 80
+max_hp = 60
+current_hp = 60
 attack_power = 40
 unit_type = "Antibody"
 metadata/_custom_type_script = "uid://de41dm0y0xd0q"

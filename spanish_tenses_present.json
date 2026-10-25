@@ -1,216 +1,216 @@
 [
 	{
-		"question": "How do you say 'I buy'?",
+		"question": "Yo ___ (comprar)",
 		"answers": ["compro", "compra", "compras", "compramos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you buy'?",
+		"question": "Tú ___ (comprar)",
 		"answers": ["compro", "compras", "compra", "compran"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we buy' ?",
+		"question": "Nosotros ___ (comprar)",
 		"answers": ["compran", "compra", "compramos", "compras"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they buy' ?",
+		"question": "Ellos ___ (comprar)",
 		"answers": ["compra", "compramos", "compras", "compran"],
 		"correct": 3,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'I run'?",
+		"question": "Yo ___ (correr)",
 		"answers": ["corro", "corre", "corres", "corremos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you run'?",
+		"question": "Tú ___ (correr)",
 		"answers": ["corro", "corres", "corre", "corren"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we run'?",
+		"question": "Nosotros ___ (correr)",
 		"answers": ["corren", "corre", "corremos", "corres"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they run'?",
+		"question": "Ellos ___ (correr)",
 		"answers": ["corre", "corremos", "corres", "corren"],
 		"correct": 3,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'I live'?",
+		"question": "Yo ___ (vivir)",
 		"answers": ["vivo", "vive", "vives", "vivimos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you live'?",
+		"question": "Tú ___ (vivir)",
 		"answers": ["vivo", "vives", "vive", "viven"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we live'?",
+		"question": "Nosotros ___ (vivir)",
 		"answers": ["viven", "vive", "vivimos", "vives"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they live'?",
+		"question": "Ellos ___ (vivir)",
 		"answers": ["vive", "vivimos", "vives", "viven"],
 		"correct": 3,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'I am proud'?",
+		"question": "Yo ___ orgulloso/a (ser)",
 		"answers": ["soy", "eres", "es", "somos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you are proud'?",
+		"question": "Tú ___ orgulloso/a (ser)",
 		"answers": ["soy", "eres", "es", "son"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we are proud'?",
+		"question": "Nosotros ___ orgullosos (ser)",
 		"answers": ["son", "es", "somos", "eres"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they are proud'?",
+		"question": "Ellos ___ orgullosos (ser)",
 		"answers": ["es", "somos", "eres", "son"],
 		"correct": 3,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'I am at the store'?",
+		"question": "Yo ___ en la tienda (estar)",
 		"answers": ["estoy", "estás", "está", "estamos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you are at the store'?",
+		"question": "Tú ___ en la tienda (estar)",
 		"answers": ["estoy", "estás", "está", "están"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we are at the store'?",
+		"question": "Nosotros ___ en la tienda (estar)",
 		"answers": ["están", "está", "estamos", "estás"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they are at the store'?",
+		"question": "Ellos ___ en la tienda (estar)",
 		"answers": ["está", "estamos", "estás", "están"],
 		"correct": 3,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'I have'?",
+		"question": "Yo ___ (tener)",
 		"answers": ["tengo", "tienes", "tiene", "tenemos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you have'?",
+		"question": "Tú ___ (tener)",
 		"answers": ["tengo", "tienes", "tiene", "tienen"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we have'?",
+		"question": "Nosotros ___ (tener)",
 		"answers": ["tienen", "tiene", "tenemos", "tienes"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they have'?",
+		"question": "Ellos ___ (tener)",
 		"answers": ["tiene", "tenemos", "tienes", "tienen"],
 		"correct": 3,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'I go'?",
+		"question": "Yo ___ (ir)",
 		"answers": ["voy", "vas", "va", "vamos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you go'?",
+		"question": "Tú ___ (ir)",
 		"answers": ["voy", "vas", "va", "van"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we go'?",
+		"question": "Nosotros ___ (ir)",
 		"answers": ["van", "va", "vamos", "vas"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they go'?",
+		"question": "Ellos ___ (ir)",
 		"answers": ["va", "vamos", "vas", "van"],
 		"correct": 3,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'I do/make'?",
+		"question": "Yo ___ (hacer)",
 		"answers": ["hago", "haces", "hace", "hacemos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you do/make'?",
+		"question": "Tú ___ (hacer)",
 		"answers": ["hago", "haces", "hace", "hacen"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we do/make'?",
+		"question": "Nosotros ___ (hacer)",
 		"answers": ["hacen", "hace", "hacemos", "haces"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they do/make'?",
+		"question": "Ellos ___ (hacer)",
 		"answers": ["hace", "hacemos", "haces", "hacen"],
 		"correct": 3,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'I can'?",
+		"question": "Yo ___ (poder)",
 		"answers": ["puedo", "puedes", "puede", "podemos"],
 		"correct": 0,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'you can'?",
+		"question": "Tú ___ (poder)",
 		"answers": ["puedo", "puedes", "puede", "pueden"],
 		"correct": 1,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'we can'?",
+		"question": "Nosotros ___ (poder)",
 		"answers": ["pueden", "puede", "podemos", "puedes"],
 		"correct": 2,
 		"type": "mc"
 	},
 	{
-		"question": "How do you say 'they can'?",
+		"question": "Ellos ___ (poder)",
 		"answers": ["puede", "podemos", "puedes", "pueden"],
 		"correct": 3,
 		"type": "mc"

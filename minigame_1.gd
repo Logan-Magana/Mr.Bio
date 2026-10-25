@@ -4,6 +4,7 @@ signal minigame_complete()
 @onready var heat_meter = $Heat_Meter
 var animation_length = 1.0
 var threshold = 90
+var control_on = false
 @onready var sfx = $SFX
 func _ready() -> void:
 	sfx.stream = preload("res://assets/Fever_Build_Up.wav")
@@ -11,12 +12,15 @@ func _ready() -> void:
 	heat_meter.value = 0
 	$Controls.visible = true
 	$Controls_Sprite.visible = true
-	await get_tree().create_timer(1.4).timeout
-	$Controls.visible = false
-	$Controls_Sprite.visible = false
-	$Timer.start()
+	await get_tree().create_timer(0.5).timeout
+	control_on = true
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
+	if control_on and Input.is_anything_pressed():
+		$Controls.visible = false
+		$Controls_Sprite.visible = false
+		control_on = false
+		$Timer.start()
 	if Input.is_action_just_pressed("Fever_Game") and $Timer.time_left > 0:
 		heat_meter.value += 2
 		sfx.play()

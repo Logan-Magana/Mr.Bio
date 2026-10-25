@@ -40,6 +40,7 @@ theme_override_font_sizes/font_size = 25
 text = "Start"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=872122049]
+visible = false
 visibility_layer = 65536
 offset_right = 481.0
 offset_bottom = 274.0
@@ -93,13 +94,6 @@ offset_right = 307.0
 offset_bottom = 145.0
 text = "Chemistry"
 
-[node name="Bio" type="Button" parent="." unique_id=1011096232]
-offset_left = 168.0
-offset_top = 160.0
-offset_right = 288.0
-offset_bottom = 184.0
-text = "Biology"
-
 [node name="Espanol" type="Button" parent="." unique_id=1017860743]
 offset_left = 134.0
 offset_top = 83.0
@@ -108,20 +102,36 @@ offset_bottom = 107.0
 theme_override_font_sizes/font_size = 12
 text = "Espanol (tenses)"
 
+[node name="Imperfect" type="Button" parent="." unique_id=1011096232]
+visible = false
+offset_left = 162.0
+offset_top = 160.0
+offset_right = 314.0
+offset_bottom = 184.0
+text = "Imperfect"
+
 [node name="Mix" type="Button" parent="." unique_id=1642794627]
 visible = false
 offset_left = 193.0
-offset_top = 107.0
+offset_top = 67.0
 offset_right = 281.0
-offset_bottom = 131.0
+offset_bottom = 91.0
 text = "Mixed"
 
 [node name="Present" type="Button" parent="." unique_id=602406985]
 visible = false
 offset_left = 179.0
-offset_top = 139.0
+offset_top = 99.0
 offset_right = 299.0
-offset_bottom = 163.0
+offset_bottom = 123.0
 text = "Present"
+
+[node name="Preterite" type="Button" parent="." unique_id=299190634]
+visible = false
+offset_left = 161.0
+offset_top = 129.0
+offset_right = 313.0
+offset_bottom = 153.0
+text = "Preterite"
 
 [connection signal="question_select" from="CanvasLayer" to="." method="_on_canvas_layer_question_select"]

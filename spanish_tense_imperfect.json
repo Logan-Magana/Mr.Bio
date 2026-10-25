@@ -1,0 +1,128 @@
+[
+	{
+		"question": "yo ___ (comprar)",
+		"answers": ["compro", "compré", "compraba", "compraré"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (correr)",
+		"answers": ["corrías", "corres", "corriste", "correrás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "él/ella ___ (vivir)",
+		"answers": ["vive", "vivía", "vivió", "vivaba"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (comprar)",
+		"answers": ["compramos", "comprabamos", "comprábamos", "compraremos"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (correr)",
+		"answers": ["corren", "corrieron", "corrían", "correrán"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (vivir)",
+		"answers": ["vivías", "vives", "viviste", "vivirás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (ser)",
+		"answers": ["fui", "era", "soy", "seré"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (ser)",
+		"answers": ["eras", "fuiste", "eres", "serás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "él/ella ___ (ser)",
+		"answers": ["fue", "era", "es", "será"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (ser)",
+		"answers": ["eramos", "éramos", "fuimos", "seremos"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (ser)",
+		"answers": ["fueron", "eran", "son", "serán"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (ir)",
+		"answers": ["fui", "iba", "voy", "iré"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (ir)",
+		"answers": ["ibas", "fuiste", "vas", "irás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "él/ella ___ (ir)",
+		"answers": ["fue", "iba", "va", "irá"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (ir)",
+		"answers": ["ibamos", "íbamos", "fuimos", "iremos"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (ir)",
+		"answers": ["fueron", "iban", "van", "irán"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (ver)",
+		"answers": ["vi", "veía", "veo", "veré"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (ver)",
+		"answers": ["veías", "viste", "ves", "verás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "él/ella ___ (ver)",
+		"answers": ["vio", "veía", "ve", "verá"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (ver)",
+		"answers": ["vímos", "veíamos", "víamos", "vemos"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (ver)",
+		"answers": ["vieron", "veían", "ven", "verán"],
+		"correct": 1,
+		"type": "mc"
+	}
+]

@@ -8,7 +8,6 @@ var meter = 0
 var sound = [preload("res://assets/M_Eat.wav")]
 func _ready():
 	screen_size = get_viewport_rect().size
-	$Timer.start()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

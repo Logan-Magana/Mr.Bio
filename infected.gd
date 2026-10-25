@@ -7,8 +7,6 @@ signal cell_signaled
 func _ready():
 	screen_size = get_viewport_rect().size
 	area_entered.connect(_on_area_entered)
-	$CellTimer.start()
-	$AnimationPlayer.play("infected")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var velocity = Vector2.ZERO

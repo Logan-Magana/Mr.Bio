@@ -8,11 +8,10 @@ func _ready() -> void:
 	$Espanol.pressed.connect(_on_espa_button_pressed)
 	$Mix.pressed.connect(_on_mix_pressed)
 	$Present.pressed.connect(_on_pres_pressed)
-	$Bio.visible = false
+	$Imperfect.pressed.connect(_on_imp_pressed)
+	$Preterite.pressed.connect(_on_prete_pressed)
 	$Espanol.visible = false
-	
 	$Chem.visible = false
-	#$Bio.process_mode = Node.PROCESS_MODE_DISABLED
 	$Espanol.process_mode = Node.PROCESS_MODE_DISABLED
 	$Chem.process_mode = Node.PROCESS_MODE_DISABLED
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -55,6 +54,8 @@ func _on_next_menu():
 func extra_menu():
 	$Mix.visible = true
 	$Present.visible = true
+	$Imperfect.visible = true
+	$Preterite.visible = true
 	$Espanol.visible = false
 	$Chem.visible = false
 	#$Bio.process_mode = Node.PROCESS_MODE_DISABLED
@@ -67,4 +68,10 @@ func _on_mix_pressed():
 	
 func _on_pres_pressed():
 	GameData.question_file ="res://spanish_tenses_present.json"
+	start_up()
+func _on_imp_pressed():
+	GameData.question_file ="res://spanish_tense_imperfect.json"
+	start_up()
+func _on_prete_pressed():
+	GameData.question_file ="res://spanish_tense_preterite.json"
 	start_up()

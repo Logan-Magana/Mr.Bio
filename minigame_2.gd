@@ -5,21 +5,25 @@ var sound = [preload("res://assets/fake_laser.wav"), preload("res://assets/real_
 signal minigame_complete()
 var score = 0
 var threshold = 35
+var control_on = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$Controls.visible = true
 	$Controls_Sprite.visible = true
 	$Controls_Sprite2.visible = true
-	await get_tree().create_timer(1.4).timeout
-	$Controls.visible = false
-	$Controls_Sprite.visible = false
-	$Controls_Sprite2.visible = false
-	$Timer.start()
-	for i in range(9):
-		spawn_target()
+	await get_tree().create_timer(0.5).timeout
+	control_on = true
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if control_on and Input.is_anything_pressed():
+		$Controls.visible = false
+		$Controls_Sprite.visible = false
+		$Controls_Sprite.visible = false
+		$Controls_Sprite2.visible = false
+		control_on = false
+		$Timer.start()
+		for i in range(9):
+			spawn_target()
 
 func spawn_target():
 	if $Timer.time_left > 0:

@@ -207,7 +207,7 @@ func _on_analyze_done(correct):
 		$Enemy/AnimationPlayer.play("lunge_attack")
 		await get_tree().create_timer(0.8).timeout
 		$Dodge.visible = false
-		block_mult = 0.3
+		block_mult = 0.0
 		change_state(BattleState.ENEMY_TURN)
 	else:
 		charges += 0.5

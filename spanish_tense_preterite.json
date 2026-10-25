@@ -1,0 +1,200 @@
+[
+	{
+		"question": "yo ___ (comprar)",
+		"answers": ["compro", "compraba", "compré", "compraré"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (correr)]",
+		"answers": ["corriste", "corres", "corrías", "correrás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "él/ella ___ (vivir)",
+		"answers": ["vive", "vivía", "vivió", "vivirá"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (comprar)",
+		"answers": ["compramos", "comprábamos", "compraremos", "compraríamos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (correr)",
+		"answers": ["corren", "corrían", "corrieron", "correrán"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (ser)",
+		"answers": ["fui", "era", "soy", "seré"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (ir)",
+		"answers": ["ibas", "vas", "fuiste", "irás"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "ella ___ (ser)",
+		"answers": ["era", "fue", "es", "será"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (ir)",
+		"answers": ["fuimos", "íbamos", "vamos", "iremos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (ser)",
+		"answers": ["eran", "son", "fueron", "serán"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (tener)",
+		"answers": ["tuve", "tenía", "tengo", "tendré"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (tener)",
+		"answers": ["tienes", "tuviste", "tenías", "tendrás"],
+		"correct": 1,
+		"type": "mc"
+	},
+	{
+		"question": "él/ella ___ (tener)",
+		"answers": ["tuvo", "tenía", "tiene", "tendrá"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (tener)",
+		"answers": ["tuvimos", "teníamos", "tenemos", "tendremos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (tener)",
+		"answers": ["tenían", "tienen", "tuvieron", "tendrán"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (estar)",
+		"answers": ["estuve", "estaba", "estoy", "estaré"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (estar)",
+		"answers": ["estás", "estabas", "estuviste", "estarás"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (estar)",
+		"answers": ["estuvimos", "estábamos", "estamos", "estaremos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (hacer)",
+		"answers": ["hago", "hacía", "hice", "haré"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (hacer)",
+		"answers": ["hiciste", "haces", "hacías", "harás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "él/ella ___ (hacer)",
+		"answers": ["hace", "hico", "hizo", "hacía"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (hacer)",
+		"answers": ["hicimos", "hacíamos", "hacemos", "haremos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (poder)",
+		"answers": ["puedo", "podía", "pude", "podré"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (poder)",
+		"answers": ["pudiste", "puedes", "podías", "podrás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (poder)",
+		"answers": ["podían", "pueden", "pudieron", "podrán"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (decir)",
+		"answers": ["digo", "decía", "dije", "diré"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (decir)",
+		"answers": ["dijiste", "dices", "decías", "dirás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (decir)",
+		"answers": ["decían", "dicen", "dijieron", "dijeron"],
+		"correct": 3,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (ver)",
+		"answers": ["veo", "veía", "vi", "veré"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "nosotros ___ (ver)",
+		"answers": ["vimos", "veíamos", "vemos", "veremos"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "yo ___ (dar)",
+		"answers": ["doy", "daba", "di", "daré"],
+		"correct": 2,
+		"type": "mc"
+	},
+	{
+		"question": "tú ___ (dar)",
+		"answers": ["diste", "das", "dabas", "darás"],
+		"correct": 0,
+		"type": "mc"
+	},
+	{
+		"question": "ellos/ellas ___ (dar)",
+		"answers": ["daban", "dan", "dieron", "darán"],
+		"correct": 2,
+		"type": "mc"
+	}
+]
